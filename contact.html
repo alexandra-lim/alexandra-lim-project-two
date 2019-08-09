@@ -14,87 +14,93 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="wrapper">
     <!-- header -->
-    <header>
-        <a href="index.html">
-            <h3>Sanctuary Helpers</h3>
-        </a>
-    
-        <!-- nav -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="blog.html">Blog</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    
-        <h1>Get In Touch</h1>
-    </header>
-
-    <!-- main -->
-    <main>
-        <!-- form -->
-        <form action="submit">
-            <label for="name" class="visually-hidden">Name</label>
-            <input type="text" name="name" id="name" placeholder="Name" required>
+        <header>
+            <a href="index.html">
+                <h3>Sanctuary Helpers</h3>
+            </a>
         
-            <label for="email" class="visually-hidden">Email address</label>
-            <input type="email" name="email" id="email" placeholder="Email address" required>
-        
-            <label for="text-area" class="visually-hidden">Comments</label>
-            <textarea name="message" id="message" placeholder="Message" cols="30" rows="10" required></textarea>
-        
-            <button type="submit">Submit</button>
-        </form>
-
-        <!-- contact info -->
-        <section class="contact">
-            <!-- social media -->
-            <nav class="social">
+            <!-- nav -->
+            <nav>
                 <ul>
                     <li>
-                        <a href="http://www.facebook.com" aria-label="Go to Sanctuary Helpers' Facebook page">
-                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                        </a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="http://www.instagram.com" aria-label="Go to Sanctuary Helpers' Instagram page">
-                            <i class="fab fa-instagram" aria-hidden="true"></i>
-                        </a>
+                        <a href="#">About</a>
                     </li>
                     <li>
-                        <a href="http://www.twitter.com" aria-label="Go to Sanctuary Helpers' Twitter feed">
-                            <i class="fab fa-twitter" aria-hidden="true"></i>
-                        </a>
+                        <a href="blog.html">Blog</a>
                     </li>
                     <li>
-                        <a href="http://www.whatsapp.com" aria-label="Contact Sanctuary Helpers via WhatsApp">
-                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
-                        </a>
+                        <a href="contact.html">Contact</a>
                     </li>
                 </ul>
             </nav>
+        
+            <h1>Get In Touch</h1>
+        </header>
+    </div>
 
-            <a href="mailto:info@email.com" class="email">info@email.com</a>
-
-            <div class="phone-address">
-                <a href="tel:123-456-7890" class="phone">123 - 456 - 7890</a>
-                <p>123 Queen Street West,</p>
-                <p>Unit 10</p>
-                <p>Toronto, Ontario</p>
-                <p>M5V 2D5</p>
+    <!-- main -->
+    <main>
+        <div class="wrapper">
+            <!-- form -->
+            <div class="form">
+                <form action="submit">
+                    <label for="name" class="visually-hidden">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Name" required>
+                
+                    <label for="email" class="visually-hidden">Email address</label>
+                    <input type="email" name="email" id="email" placeholder="Email address" required>
+                
+                    <label for="text-area" class="visually-hidden">Comments</label>
+                    <textarea name="message" id="message" placeholder="Message" cols="30" rows="10" required></textarea>
+                
+                    <button type="submit">Submit</button>
+                </form>
             </div>
-        </section>
+
+            <!-- contact info -->
+            <section class="contact">
+                <!-- social media -->
+                <nav class="social">
+                    <ul>
+                        <li>
+                            <a href="http://www.facebook.com" aria-label="Go to Sanctuary Helpers' Facebook page">
+                                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.instagram.com" aria-label="Go to Sanctuary Helpers' Instagram page">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.twitter.com" aria-label="Go to Sanctuary Helpers' Twitter feed">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.whatsapp.com" aria-label="Contact Sanctuary Helpers via WhatsApp">
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <a href="mailto:info@email.com" class="email">info@email.com</a>
+
+                <div class="phone-address">
+                    <a href="tel:123-456-7890" class="phone">123 - 456 - 7890</a>
+                    <p>123 Queen Street West,</p>
+                    <p>Unit 10</p>
+                    <p>Toronto, Ontario</p>
+                    <p>M5V 2D5</p>
+                </div>
+            </section>
+        </div>
     </main>
 
     <!-- footer -->

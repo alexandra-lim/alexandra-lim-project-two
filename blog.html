@@ -42,25 +42,28 @@
 
     <!-- main -->
     <main>
+        
         <!-- blog -->
         <article>
             <div class="image">
                 <img src="assets/blog-post-image.jpg" alt="A wooden blue loveseat with white cushions in a living room with blue and white floor tiles. A green and blue painting hangs on the white wall">
             </div>
 
-            <div class="blog-content">
-                <h2>Finding the right pieces for a new space</h2>
-                <p class="date">
-                    Monday, October 5th, 2019 by <a href="#">Saron</a>
-                </p>
+            <div class="wrapper"></div>
+                <div class="blog-content">
+                    <h2>Finding the right pieces for a new space</h2>
+                    <p class="date">
+                        Monday, October 5th, 2019 by <a href="#">Saron</a>
+                    </p>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod magnam quos incidunt aliquid earum fugiat recusandae iure, eos nostrum eveniet ducimus. Assumenda tempore nisi nobis in asperiores, accusantium est reiciendis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod magnam quos incidunt aliquid earum fugiat recusandae iure, eos nostrum eveniet ducimus. Assumenda tempore nisi nobis in asperiores, accusantium est reiciendis.</p>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero minima corporis, nobis est, vero nostrum harum hic recusandae tempora nam, perspiciatis architecto fugit maiores. Consectetur praesentium quidem repudiandae, doloremque excepturi ab aperiam deserunt nulla corporis esse, suscipit dolorum consequatur at.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero minima corporis, nobis est, vero nostrum harum hic recusandae tempora nam, perspiciatis architecto fugit maiores. Consectetur praesentium quidem repudiandae, doloremque excepturi ab aperiam deserunt nulla corporis esse, suscipit dolorum consequatur at.</p>
 
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum aut deleniti aperiam numquam. Nobis minima fugiat voluptate soluta sint distinctio fugit tempore? Consectetur ipsum porro ipsam totam distinctio placeat et, architecto in animi, temporibus, facere officiis nihil ab ipsa repellendus praesentium saepe ad perferendis dolorum. Ipsam quasi reprehenderit modi exercitationem.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum aut deleniti aperiam numquam. Nobis minima fugiat voluptate soluta sint distinctio fugit tempore? Consectetur ipsum porro ipsam totam distinctio placeat et, architecto in animi, temporibus, facere officiis nihil ab ipsa repellendus praesentium saepe ad perferendis dolorum. Ipsam quasi reprehenderit modi exercitationem.</p>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolores, sed impedit voluptatum magnam nisi voluptas laboriosam ullam eaque a ipsam odit veritatis sapiente facere!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolores, sed impedit voluptatum magnam nisi voluptas laboriosam ullam eaque a ipsam odit veritatis sapiente facere!</p>
+                </div>
             </div>
         </article>
     
@@ -94,35 +97,37 @@
 
         <!-- comments section -->
         <section class="comments">
-            <h3>Comments:</h3>
+            <div class="wrapper">
+                <h3>Comments:</h3>
+                
+                <!-- comment blurbs -->
+                <div class="comment1">
+                    <img src="assets/comment-image.jpg" alt="Davin's profile picture">
+                    <p class="comment-date">Tuesday October 9th, 2019 by Davin</p>
+                    <p class="comment-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, sapiente praesentium impedit itaque aliquid vel pariatur possimus nam tenetur cum accusamus rerum accusantium explicabo optio debitis velit ipsa ratione consequatur quam beatae, facilis ex inventore.</p>
+                </div>
+
+                <div class="comment2">
+                    <img src="assets/comment-image2.jpg" alt="Lisa's profile picture">
+                    <p class="comment-date">Wednesday October 10th, 2019 by Lisa</p>
+                    <p class="comment-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit soluta necessitatibus odit id ab, inventore ipsum natus perferendis accusantium excepturi.
+                    </p>
+                </div>
             
-            <!-- comment blurbs -->
-            <div class="comment1">
-                <img src="assets/comment-image.jpg" alt="Davin's profile picture">
-                <p class="comment-date">Tuesday October 9th, 2019 by Davin</p>
-                <p class="comment-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, sapiente praesentium impedit itaque aliquid vel pariatur possimus nam tenetur cum accusamus rerum accusantium explicabo optio debitis velit ipsa ratione consequatur quam beatae, facilis ex inventore.</p>
+                <!-- form -->
+                <form action="submit">
+                    <label for="name" class="visually-hidden">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Name" required>
+
+                    <label for="email" class="visually-hidden">Email address</label>
+                    <input type="email" name="email" id="email" placeholder="Email address" required>
+
+                    <label for="text-area" class="visually-hidden">Comments</label>
+                    <textarea name="comments" id="comments" placeholder="Comments" cols="30" rows="10" required></textarea>
+
+                    <button type="submit">Post Comment</button>
+                </form>
             </div>
-
-            <div class="comment2">
-                <img src="assets/comment-image2.jpg" alt="Lisa's profile picture">
-                <p class="comment-date">Wednesday October 10th, 2019 by Lisa</p>
-                <p class="comment-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit soluta necessitatibus odit id ab, inventore ipsum natus perferendis accusantium excepturi.
-                </p>
-            </div>
-
-            <!-- form -->
-            <form action="submit">
-                <label for="name" class="visually-hidden">Name</label>
-                <input type="text" name="name" id="name" placeholder="Name" required>
-
-                <label for="email" class="visually-hidden">Email address</label>
-                <input type="email" name="email" id="email" placeholder="Email address" required>
-
-                <label for="text-area" class="visually-hidden">Comments</label>
-                <textarea name="comments" id="comments" placeholder="Comments" cols="30" rows="10" required></textarea>
-
-                <button type="submit">Post Comment</button>
-            </form>
         </section>
     </main>
 

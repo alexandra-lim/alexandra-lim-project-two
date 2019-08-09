@@ -11,30 +11,32 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
     <link rel="manifest" href="assets/favicons/site.webmanifest">
     <link href="https://fonts.googleapis.com/css?family=Kumar+One|Kumar+One+Outline|Lato:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <!-- header -->
     <header>
-        <!-- nav -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="blog.html">Blog</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-
-        <h1>Sanctuary Helpers</h1>
+        <div class="wrapper">
+            <!-- nav -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        
+            <h1>Sanctuary Helpers</h1>
+        </div>
 
         <img src="assets/header-box.png" alt="Two blue velvet chairs side by side with two green pillows on the left chair. The chairs are in a white room with white wood flooring.">
     </header>
@@ -43,48 +45,54 @@
     <main>
         <!-- materials -->
         <section class="materials">
-            <div class="text-content">
-                <h2>Discovering New Materials</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae reiciendis, iusto nesciunt magni necessitatibus blanditiis vitae quasi a ad consequatur error, impedit cupiditate. Incidunt, tenetur mollitia sapiente reprehenderit error fuga nihil asperiores non magnam laboriosam maxime obcaecati eveniet ipsa expedita laborum vitae corporis iusto sed iure consequuntur voluptates ullam. Eligendi.</p>
-                <a href="#">Find Out More</a>
+            <div class="wrapper">
+                <div class="text-content">
+                    <h2>Discovering New Materials</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae reiciendis, iusto nesciunt magni necessitatibus blanditiis vitae quasi a ad consequatur error, impedit cupiditate. Incidunt, tenetur mollitia sapiente reprehenderit error fuga nihil asperiores non magnam laboriosam maxime obcaecati eveniet ipsa expedita laborum vitae corporis iusto sed iure consequuntur voluptates ullam. Eligendi.</p>
+                    <a href="#">Find Out More</a>
+                </div>
+                <img src="assets/small-box.jpg" alt="A living room with a glass lamp with a round lampshade on two nesting metal side tables, a grey three-seater couch, a large rectangular glass coffee table, and a light blue and green abstract painting on the unfinished cement wall">
             </div>
-            <img src="assets/small-box.jpg" alt="A living room with a glass lamp with a round lampshade on two nesting metal side tables, a grey three-seater couch, a large rectangular glass coffee table, and a light blue and green abstract painting on the unfinished cement wall">
         </section>
 
         <!-- gallery -->
         <section class="gallery">
-            <ul>
-                <li><img src="assets/gallery-image-1.jpg" alt="An emerald coloured dresser with two picture frames and a wooden vase displayed on top with a white brick wall in the background"></li>
-                <li><img src="assets/gallery-image-2.jpg" alt="A living room with a yellow ochre leather couch, a large black round wooden coffee table and a white leather ottoman. Three throw pillows with multi coloured polka dots sit on the couch"></li>
-                <li><img src="assets/gallery-image-3.jpg" alt="A dark grey handwoven egg-shaped outdoor chair in the middle of a living room surrounded with other living room furniture and Edison lighting"></li>
-            </ul>
+            <div class="wrapper">
+                <ul>
+                    <li><img src="assets/gallery-image-1.jpg" alt="An emerald coloured dresser with two picture frames and a wooden vase displayed on top with a white brick wall in the background"></li>
+                    <li><img src="assets/gallery-image-2.jpg" alt="A living room with a yellow ochre leather couch, a large black round wooden coffee table and a white leather ottoman. Three throw pillows with multi coloured polka dots sit on the couch"></li>
+                    <li><img src="assets/gallery-image-3.jpg" alt="A dark grey handwoven egg-shaped outdoor chair in the middle of a living room surrounded with other living room furniture and Edison lighting"></li>
+                </ul>
+            </div>
         </section>
 
         <!-- page links with descriptions -->
         <section class="pages">
-            <div class="link-content">
-                <span class="sr-only"></span>
-                <i class="fas fa-home" aria-hidden="true"></i>
-                <a href="#">Customized Offers</a>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat laudantium expedita quas nostrum voluptas eaque pariatur aperiam beatae perspiciatis sint, debitis quis, itaque, deserunt magnam!</p>
-            </div>
+            <div class="wrapper">
+                <div class="text-content">
+                    <span class="sr-only"></span>
+                    <i class="fas fa-home" aria-hidden="true"></i>
+                    <a href="#">Customized Offers</a>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat laudantium expedita quas nostrum voluptas eaque pariatur aperiam beatae perspiciatis sint, debitis quis, itaque, deserunt magnam!</p>
+                </div>
 
-            <div class="link-content">
-                <i class="fas fa-users" aria-hidden="true"></i>
-                <a href="#">Community</a>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, placeat quia eveniet iusto numquam omnis porro dolorum doloremque quisquam, dolore accusantium officia molestiae deserunt reprehenderit.</p>
-            </div>
+                <div class="text-content">
+                    <i class="fas fa-users" aria-hidden="true"></i>
+                    <a href="#">Community</a>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, placeat quia eveniet iusto numquam omnis porro dolorum doloremque quisquam, dolore accusantium officia molestiae deserunt reprehenderit.</p>
+                </div>
 
-            <div class="link-content">
-                <i class="fas fa-file" aria-hidden="true"></i>
-                <a href="#">Blog</a>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi ad vitae dolor. Aspernatur tempora sit accusamus, doloremque ad voluptate doloribus ipsam perferendis molestiae, harum dicta!</p>
-            </div>
+                <div class="text-content">
+                    <i class="fas fa-file" aria-hidden="true"></i>
+                    <a href="#">Blog</a>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi ad vitae dolor. Aspernatur tempora sit accusamus, doloremque ad voluptate doloribus ipsam perferendis molestiae, harum dicta!</p>
+                </div>
 
-            <div class="link-content">
-                <i class="fas fa-phone" aria-hidden="true"></i>
-                <a href="#">Get in touch</a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, sit eum quia voluptates sint laudantium quo quibusdam, omnis aliquid obcaecati veritatis provident quisquam explicabo doloribus!</p>
+                <div class="text-content">
+                    <i class="fas fa-phone" aria-hidden="true"></i>
+                    <a href="#">Get in touch</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, sit eum quia voluptates sint laudantium quo quibusdam, omnis aliquid obcaecati veritatis provident quisquam explicabo doloribus!</p>
+                </div>
             </div>
         </section>
 
@@ -116,9 +124,11 @@
 
         <!-- search by style -->
         <section class="style">
-            <h2>Search by style</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates facilis nulla velit, fuga, dignissimos veritatis laborum, maxime placeat vel deleniti sed non est inventore quae numquam nisi! Inventore, corporis magnam culpa sapiente facere expedita earum optio placeat, et soluta animi.</p>
-            <a href="#">Find out more</a>
+            <div class="text-content">
+                <h2>Search by style</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates facilis nulla velit, fuga, dignissimos veritatis laborum, maxime placeat vel deleniti sed non est inventore quae numquam nisi! Inventore, corporis magnam culpa sapiente facere expedita earum optio placeat, et soluta animi.</p>
+                <a href="#">Find out more</a>
+            </div>
         </section>
     </main>
 
