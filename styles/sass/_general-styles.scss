@@ -7,19 +7,3 @@ h1, h2, h3 {
     font-weight: 400;
 }
 
-// button or link styling
-@mixin button-styles {
-    a {
-    @content;
-    text-transform: uppercase;
-    text-decoration: none;
-    background: $button-color;
-    text-align: center;
-    font-size: 2rem;
-    line-height: 3.2rem;
-    letter-spacing: 1px;
-    font-family: $headings-font;
-    color: $bg-color1;
-    padding: 2% 4%;
-    }
-}

@@ -7,7 +7,6 @@
     max-width: 1200px;
     width: 80%;
     margin: 0 auto;
-    border: 1px solid blue;
     position: relative;
 }
 
@@ -137,17 +136,136 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    .text-content {
-        width: 50%;
+    padding: 5% 0 7% 0;
+    .pages-content {
+        display: flex;
+        width: calc(50% - 2%);
         align-content: space-between;
+        margin: 3% 1% 0 1%;
+    }
+}
+
+.pages .icon {
+    .fas {
+        font-size: 2.8rem;
+        background: #f8fb05;
+        padding: 14px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        text-align: center;
+        // margin-right: 3%;
     }
 }
 
 .pages .text-content {
+    margin: 1% 0 0 4%;
     a {
         font-size: 3.3rem;
         line-height: 5.8rem;
         letter-spacing: 2.1px;
         font-family: $headings-font;
+    }
+}
+
+
+// programs + locations
+
+.programs-locations {
+    background: $bg-color2;
+    padding: 7% 0;
+    position: relative;
+    a {
+        text-decoration: none;
+        background: $button-color;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 3.2rem;
+        letter-spacing: 1px;
+        font-family: $headings-font;
+        color: $bg-color1;
+        padding: 2% 4%;
+    }
+}
+
+.programs, .locations {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: flex-end;
+    justify-content: space-between;
+    .image {
+        width: 50%;
+    }
+    .text-content {
+        width: calc(50% - 10%);
+        h2 {
+            margin: 0;
+        }
+    }
+}
+
+.programs {
+    .text-content {
+        margin-right: 10%;
+        padding-left: 5%;
+    }
+    img {
+        position: absolute;
+        top: -10%;
+        box-shadow: 15px 15px $highlight-color;
+    }
+}
+
+.locations {
+    margin-top: 8%;
+    .text-content {
+        margin-left: 10%;
+        text-align: right;
+        padding-right: 5%;
+    }
+    .image {
+        order: 2;
+        margin-right: 0;
+    }
+    img {
+        position: absolute;
+        right: 0%;
+        box-shadow: -15px 15px $highlight-color;
+    }
+}
+    
+// search by style
+
+.style {
+    .text-content {
+        margin: 0 auto;
+        text-align: center;
+        padding: 10% 0;
+        a {
+            text-decoration: none;
+            background: $button-color;
+            text-align: center;
+            font-size: 2rem;
+            line-height: 3.2rem;
+            letter-spacing: 1px;
+            font-family: $headings-font;
+            color: $bg-color1;
+            padding: 2% 4%;
+        }
+    }
+}
+
+// footer 
+
+footer {
+    background: $base-color;
+    p {
+        margin: 0;
+        font-size: 2rem;
+        line-height: 3.2rem;
+        letter-spacing: 2px;
+        color: $bg-color1;
+        text-align: center;
+        // padding: 0.5% 0;
     }
 }
