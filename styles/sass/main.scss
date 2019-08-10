@@ -8,6 +8,7 @@
     width: 80%;
     margin: 0 auto;
     position: relative;
+    border: 1px solid red;
 }
 
 a {
@@ -25,57 +26,36 @@ a {
 // header
 header {
     background: #fff url(../assets/header-home.jpg) no-repeat;
-    background-position: contain;
+    background-size: cover;
     height: 95vh;
     min-height: 600px;
     img {
         position: absolute;
-        top: 45%;
+        top: 51%;
+        right: 44%;
     }
 }
 
+// nav
 nav {
     font-family: $body-font;
     font-weight: 700;
     font-size: 2rem;
     display: flex;
     justify-content: flex-end;
-    // padding-top: 5%;
+    margin-right: 13.75%;
     ul {
         list-style: none;
         display: flex;
         justify-content: space-between;
         li {
-            padding: 10px;
+            padding: 0 8%;
         }
     }
 }
 
-
-h1 {
-    font-size: 6.8rem;
-    font-family: $h1-font;
-    width: 25%;
-    line-height: 6.4rem;
-    margin-left: 11%;
-}
-
 // main
 
-.text-content {
-    h2 {
-        margin-top: 0;
-        font-size: 3.3rem;
-        font-family: $headings-font;
-    }
-    p {
-        font-family: $body-font;
-        font-size: 2rem;
-        line-height: 2.9rem;
-        letter-spacing: 2px;
-        margin-bottom: 5%;
-    }
-}
 // materials
 
 .materials {
@@ -101,14 +81,17 @@ h1 {
             padding: 2% 4%;
         }
     }
+}
+
+.materials .materials-image {
+    flex: 1 0 auto;
+    width: 30%;
+    justify-content: flex-end;
+    padding-left: 3.75%;
     img {
-        flex: 1 0 auto;
-        width: 30%;
-        justify-content: flex-end;
         box-shadow: -15px 15px $highlight-color;
     }
 }
-
 
 // gallery
 
@@ -136,7 +119,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 5% 0 7% 0;
+    padding: 5% 0 10% 0;
     .pages-content {
         display: flex;
         width: calc(50% - 2%);
@@ -154,7 +137,6 @@ h1 {
         height: 60px;
         border-radius: 50%;
         text-align: center;
-        // margin-right: 3%;
     }
 }
 
@@ -173,7 +155,7 @@ h1 {
 
 .programs-locations {
     background: $bg-color2;
-    padding: 7% 0;
+    padding: 7% 0 2% 0;
     position: relative;
     a {
         text-decoration: none;
@@ -191,7 +173,6 @@ h1 {
 .programs, .locations {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: flex-end;
     justify-content: space-between;
     .image {
         width: 50%;
@@ -209,10 +190,11 @@ h1 {
         margin-right: 10%;
         padding-left: 5%;
     }
-    img {
-        position: absolute;
-        top: -10%;
+    .image {
+        margin-top: -11%;
+        img {
         box-shadow: 15px 15px $highlight-color;
+        }
     }
 }
 
@@ -220,16 +202,16 @@ h1 {
     margin-top: 8%;
     .text-content {
         margin-left: 10%;
+        margin-top: 3%;
         text-align: right;
         padding-right: 5%;
     }
     .image {
-        order: 2;
-        margin-right: 0;
+        padding-left: 3.75%;
+        order: 1;
+        width: 50%;
     }
     img {
-        position: absolute;
-        right: 0%;
         box-shadow: -15px 15px $highlight-color;
     }
 }
@@ -255,17 +237,3 @@ h1 {
     }
 }
 
-// footer 
-
-footer {
-    background: $base-color;
-    p {
-        margin: 0;
-        font-size: 2rem;
-        line-height: 3.2rem;
-        letter-spacing: 2px;
-        color: $bg-color1;
-        text-align: center;
-        // padding: 0.5% 0;
-    }
-}

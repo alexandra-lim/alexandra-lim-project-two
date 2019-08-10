@@ -1,10 +1,32 @@
 @import "typography";
 
-nav {
-    ul {
-        display: flex;
-        li {
-            
+header nav {
+    font-family: $body-font;
+    font-weight: 700;
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    // margin-right: 13.5%;
+}
+
+.logo {
+    width: 25%;
+}
+    
+header ul {
+    width: calc(75%);
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 22.5%;
+    li {
+        padding: 0 6%;
+        &:last-child {
+            padding-right: 0;
+        }
+        a {
+            padding-bottom: 2%;
         }
     }
 }
+

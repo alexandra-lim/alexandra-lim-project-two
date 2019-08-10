@@ -10,110 +10,97 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
     <link rel="manifest" href="assets/favicons/site.webmanifest">
     <link href="https://fonts.googleapis.com/css?family=Kumar+One|Kumar+One+Outline|Lato:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/blog.css">
 </head>
 <body>
     <!-- header -->
     <header>
-        <a href="index.html">
-            <h3>Sanctuary Helpers</h3>
-        </a>
+        <div class="wrapper">
+            <!-- nav -->
+            <nav>
+                <figure class="logo">
+                    <a href="index.html">
+                        <h3>Sanctuary Helpers</h3>
+                    </a>
+                </figure>
+                
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
 
-        <!-- nav -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="blog.html">Blog</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-
-        <h1>Blog</h1>
+            <h1>Blog</h1>
+        </div>
     </header>
 
     <!-- main -->
     <main>
+        <div class="blog-comments">
         
         <!-- blog -->
-        <article>
-            <div class="image">
-                <img src="assets/blog-post-image.jpg" alt="A wooden blue loveseat with white cushions in a living room with blue and white floor tiles. A green and blue painting hangs on the white wall">
-            </div>
+            <article class="blog">
+                <figure class="blog-image">
+                    <img src="assets/blog-post-image.jpg" alt="A wooden blue loveseat with white cushions in a living room with blue and white floor tiles. A green and blue painting hangs on the white wall">
+                </figure>
 
-            <div class="wrapper"></div>
                 <div class="blog-content">
-                    <h2>Finding the right pieces for a new space</h2>
-                    <p class="date">
-                        Monday, October 5th, 2019 by <a href="#">Saron</a>
-                    </p>
+                    <div class="wrapper">
+                        <h2>Finding the right pieces for a new space</h2>
+                        <p class="date">
+                            Monday, October 5th, 2019 by <a href="#">Saron</a>
+                        </p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod magnam quos incidunt aliquid earum fugiat recusandae iure, eos nostrum eveniet ducimus. Assumenda tempore nisi nobis in asperiores, accusantium est reiciendis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod magnam quos incidunt aliquid earum fugiat recusandae iure, eos nostrum eveniet ducimus. Assumenda tempore nisi nobis in asperiores, accusantium est reiciendis.</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero minima corporis, nobis est, vero nostrum harum hic recusandae tempora nam, perspiciatis architecto fugit maiores. Consectetur praesentium quidem repudiandae, doloremque excepturi ab aperiam deserunt nulla corporis esse, suscipit dolorum consequatur at.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero minima corporis, nobis est, vero nostrum harum hic recusandae tempora nam, perspiciatis architecto fugit maiores. Consectetur praesentium quidem repudiandae, doloremque excepturi ab aperiam deserunt nulla corporis esse, suscipit dolorum consequatur at.</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum aut deleniti aperiam numquam. Nobis minima fugiat voluptate soluta sint distinctio fugit tempore? Consectetur ipsum porro ipsam totam distinctio placeat et, architecto in animi, temporibus, facere officiis nihil ab ipsa repellendus praesentium saepe ad perferendis dolorum. Ipsam quasi reprehenderit modi exercitationem.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum aut deleniti aperiam numquam. Nobis minima fugiat voluptate soluta sint distinctio fugit tempore? Consectetur ipsum porro ipsam totam distinctio placeat et, architecto in animi, temporibus, facere officiis nihil ab ipsa repellendus praesentium saepe ad perferendis dolorum. Ipsam quasi reprehenderit modi exercitationem.</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolores, sed impedit voluptatum magnam nisi voluptas laboriosam ullam eaque a ipsam odit veritatis sapiente facere!</p>
-                </div>
-            </div>
-        </article>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolores, sed impedit voluptatum magnam nisi voluptas laboriosam ullam eaque a ipsam odit veritatis sapiente facere!</p>
+                    </div>
+                </div>  
+            </article>
+        
     
-        <!-- mission + recent posts -->
-        <aside>
-            <img src="assets/sidebar-image.jpg" alt="A coral geometric metal pendant lamp">
-
-            <div class="mission">
-                <h3>Our Mission</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe assumenda explicabo excepturi ullam quisquam expedita officiis culpa velit?</p>
-            </div>
-
-            <div class="recent-posts">
-                <h3>Recent Posts</h3>
-                <ul>
-                    <li>
-                        <a href="#">Lorem ipsum dolor sit.</a>
-                    </li>
-                    <li>
-                        <a href="#">Lorem ipsum dolor sit.</a>
-                    </li>
-                    <li>
-                        <a href="#">Lorem ipsum dolor sit.</a>
-                    </li>
-                    <li>
-                        <a href="#">Lorem ipsum dolor sit.</a>
-                    </li>
-                </ul>
-            </div>
-        </aside>
-
         <!-- comments section -->
-        <section class="comments">
-            <div class="wrapper">
-                <h3>Comments:</h3>
-                
-                <!-- comment blurbs -->
-                <div class="comment1">
-                    <img src="assets/comment-image.jpg" alt="Davin's profile picture">
-                    <p class="comment-date">Tuesday October 9th, 2019 by Davin</p>
-                    <p class="comment-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, sapiente praesentium impedit itaque aliquid vel pariatur possimus nam tenetur cum accusamus rerum accusantium explicabo optio debitis velit ipsa ratione consequatur quam beatae, facilis ex inventore.</p>
-                </div>
+            <section class="comments">
+                <div class="wrapper">
+                    <h3>Comments:</h3>
+                    
+                    <!-- comment blurbs -->
+                    <div class="comment1">
+                        <figure class="profile-pic">
+                            <img src="assets/comment-image.jpg" alt="Davin's profile picture">
+                        </figure>
+                        <div class="comment-content">
+                            <p class="comment-date">Tuesday October 9th, 2019 by Davin</p>
+                            <p class="comment-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, sapiente praesentium impedit itaque aliquid vel pariatur possimus nam tenetur cum accusamus rerum accusantium explicabo optio debitis velit ipsa ratione consequatur quam beatae, facilis ex inventore.</p>
+                        </div>
+                    </div>
 
-                <div class="comment2">
-                    <img src="assets/comment-image2.jpg" alt="Lisa's profile picture">
-                    <p class="comment-date">Wednesday October 10th, 2019 by Lisa</p>
-                    <p class="comment-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit soluta necessitatibus odit id ab, inventore ipsum natus perferendis accusantium excepturi.
-                    </p>
+                    <div class="comment2">
+                        <figure class="profile-pic">
+                            <img src="assets/comment-image2.jpg" alt="Lisa's profile picture">
+                        </figure>
+                        <div class="comment-content">
+                            <p class="comment-date">Wednesday October 10th, 2019 by Lisa</p>
+                            <p class="comment-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit soluta necessitatibus odit id ab, inventore ipsum natus perferendis accusantium excepturi.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            
+                
                 <!-- form -->
                 <form action="submit">
                     <label for="name" class="visually-hidden">Name</label>
@@ -122,13 +109,46 @@
                     <label for="email" class="visually-hidden">Email address</label>
                     <input type="email" name="email" id="email" placeholder="Email address" required>
 
-                    <label for="text-area" class="visually-hidden">Comments</label>
-                    <textarea name="comments" id="comments" placeholder="Comments" cols="30" rows="10" required></textarea>
+                    <label for="text-area" class="visually-hidden">Comment</label>
+                    <textarea name="comment" id="comment" placeholder="Comment" cols="15" rows="8" required></textarea>
 
                     <button type="submit">Post Comment</button>
                 </form>
+            </section>
+        </div>
+
+        <!-- mission + recent posts -->
+        <aside class="sidebar">
+            <figure class="sidebar-image">
+                <img src="assets/sidebar-image.jpg" alt="A coral geometric metal pendant lamp">
+            </figure>
+        
+            <div class="sidebar-content">
+                <div class="mission">
+                    <h3>Our Mission</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe assumenda explicabo excepturi ullam quisquam expedita officiis culpa velit? <span><a href="#">Find out more.</a></span></p>
+                </div>
+            
+                <div class="recent-posts">
+                    <h3>Recent Posts</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Lorem ipsum dolor sit.</a>
+                        </li>
+                        <li>
+                            <a href="#">Lorem ipsum dolor sit.</a>
+                        </li>
+                        <li>
+                            <a href="#">Lorem ipsum dolor sit.</a>
+                        </li>
+                        <li>
+                            <a href="#">Lorem ipsum dolor sit.</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </section>
+        </aside>
+
     </main>
 
     <!-- footer -->
