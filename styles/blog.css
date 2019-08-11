@@ -221,9 +221,11 @@ a {
   text-transform: uppercase;
   color: #000;
   text-decoration: none;
+  -webkit-transition: 0.3s ease a;
+  transition: 0.3s ease a;
 }
 
-a:hover {
+a :hover {
   border-bottom: 2px solid #f8fb05;
 }
 
@@ -277,9 +279,11 @@ a {
   text-transform: uppercase;
   color: #000;
   text-decoration: none;
+  -webkit-transition: 0.3s ease a;
+  transition: 0.3s ease a;
 }
 
-a:hover {
+a :hover {
   border-bottom: 2px solid #f8fb05;
 }
 
@@ -311,8 +315,13 @@ header nav {
   width: 25%;
 }
 
+.logo a h3 {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
 header ul {
-  width: calc(75%);
+  width: calc(75% - 22.5%);
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -331,8 +340,18 @@ header ul li:last-child {
   padding-right: 0;
 }
 
-header ul li a {
+header nav a {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
   padding-bottom: 2%;
+}
+
+header nav a:hover {
+  border-bottom: 2px solid #f8fb05;
+}
+
+header nav a:focus {
+  border-bottom: 2px solid #f8fb05;
 }
 
 html {
@@ -360,7 +379,7 @@ footer p {
 }
 
 header {
-  background: url(../assets/blog-image.jpg) no-repeat;
+  background: #fff url(../assets/blog-image.jpg) no-repeat;
   background-size: cover;
   height: 95vh;
   min-height: 600px;
@@ -389,7 +408,6 @@ main .sidebar {
 }
 
 .blog-comments .blog-image {
-  display: block;
   position: absolute;
   top: -6%;
 }
@@ -458,13 +476,13 @@ input {
   border: none;
   background: none;
   border-bottom: 1px solid #065635;
-  padding: 0 0 3% 3%;
+  padding: 0 8% 3% 3%;
   margin-bottom: 5%;
-  width: 40%;
+  width: 43%;
 }
 
 input[type="text"] {
-  margin-right: 8.5%;
+  margin-right: 2.5%;
 }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {

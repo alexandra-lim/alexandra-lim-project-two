@@ -1,0 +1,97 @@
+@import "setup";
+@import "typography";
+@import "nav";
+@import "form";
+@import "general-styles";
+
+// header
+
+header {
+    background: $bg-color1 url(../assets/contact-image.jpg) center no-repeat;
+    background-size: cover;
+    height: 95vh;
+    min-height: 600px;
+}
+
+h1 {
+    width: 100%;
+    margin: 10% 0 0 0;
+}
+
+// main
+
+main {
+    position: relative;
+    background: $bg-color2;
+    padding-bottom: 4%;
+}
+
+main .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    .form {
+        width: 70%;
+        background: $bg-color1;
+    }
+    .contact {
+        width: calc(30% - 6%);
+        margin: 11% 0 11% 6%;
+    }
+}
+
+// form
+
+.form {
+    position: absolute;
+    left: -3%;
+    top: -33.5%;
+    padding: 6% 0;
+    box-shadow: 20px 20px $highlight-color;  
+    textarea {
+        margin-top: 1.5%;
+    }
+}
+
+button {
+    margin-top: 7%;
+}
+// contact
+
+.social {
+    ul {
+        display: flex;
+        list-style: none;
+        padding-left: 0;
+        li {
+            font-size: 2rem;
+            padding: 0 4%;
+            &:first-child {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+.social a {
+    color: $button-color;
+}
+
+.email, .phone {
+    font-family: $body-font;
+    font-size: 2rem;
+    line-height: 2.9rem;
+    letter-spacing: 2px;
+    text-transform: none;
+}
+
+.email {
+    margin-top: 8%;
+    display: block;
+}
+
+.phone-address {
+    margin-top: 8%;
+    p {
+        margin: 0;
+    }
+}

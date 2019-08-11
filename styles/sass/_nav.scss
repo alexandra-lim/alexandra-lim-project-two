@@ -6,15 +6,19 @@ header nav {
     font-size: 2rem;
     display: flex;
     justify-content: flex-end;
-    // margin-right: 13.5%;
 }
 
 .logo {
     width: 25%;
+    a {
+        h3 {
+            transition: 0.3s ease;
+        }
+    }
 }
     
 header ul {
-    width: calc(75%);
+    width: calc(75% - 22.5%);
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -24,9 +28,16 @@ header ul {
         &:last-child {
             padding-right: 0;
         }
-        a {
-            padding-bottom: 2%;
-        }
     }
 }
 
+header nav a {
+    transition: 0.3s ease;
+    padding-bottom: 2%;
+    &:hover {
+        border-bottom: 2px solid $highlight-color;
+    }
+    &:focus {
+        border-bottom: 2px solid $highlight-color;
+    }
+}
