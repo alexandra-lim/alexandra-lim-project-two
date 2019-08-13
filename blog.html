@@ -51,11 +51,11 @@
     </header>
 
     <!-- main -->
-    <main>
+    <main class="blog-main">
         <div class="blog-comments">
         
         <!-- blog -->
-            <article class="blog">
+            <article class="blog-article">
                 <figure class="blog-image">
                     <img src="assets/blog-post-image.jpg"
                         alt="A wooden blue loveseat with white cushions in a living room with blue and white floor tiles. A green and blue painting hangs on the white wall">
@@ -86,21 +86,21 @@
                     <h3>Comments:</h3>
                     
                     <!-- comment blurbs -->
-                    <div class="comment1">
+                    <div class="blog-comment1">
                         <figure class="profile-pic">
                             <img src="assets/comment-image.jpg" alt="Davin's profile picture">
                         </figure>
-                        <div class="comment-content">
+                        <div class="blog-comment-content">
                             <p class="comment-date">Tuesday October 9th, 2019 by Davin</p>
                             <p class="comment-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, sapiente praesentium impedit itaque aliquid vel pariatur possimus nam tenetur cum accusamus rerum accusantium explicabo optio debitis velit ipsa ratione consequatur quam beatae, facilis ex inventore.</p>
                         </div>
                     </div>
 
-                    <div class="comment2">
+                    <div class="blog-comment2">
                         <figure class="profile-pic">
                             <img src="assets/comment-image2.jpg" alt="Lisa's profile picture">
                         </figure>
-                        <div class="comment-content">
+                        <div class="blog-comment-content">
                             <p class="comment-date">Wednesday October 10th, 2019 by Lisa</p>
                             <p class="comment-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit soluta necessitatibus odit id ab, inventore ipsum natus perferendis accusantium excepturi.
                             </p>
@@ -112,7 +112,7 @@
                 <div class="wrapper">
                     <form action="submit">
                         <label for="name" class="visually-hidden">Name</label>
-                        <input type="text" name="name" id="name" placeholder="Name" required>
+                        <input type="text" name="name" class="name" id="name" placeholder="Name" required>
 
                         <label for="email" class="visually-hidden">Email address</label>
                         <input type="email" name="email" id="email" placeholder="Email address" required>
@@ -127,7 +127,7 @@
         </div>
 
         <!-- mission + recent posts -->
-        <aside class="sidebar">
+        <aside class="blog-sidebar">
             <figure class="sidebar-image">
                 <img src="assets/sidebar-image.jpg" alt="A coral geometric metal pendant lamp">
             </figure>

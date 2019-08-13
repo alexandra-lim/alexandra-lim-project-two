@@ -1,8 +1,13 @@
 @import "media-queries";
+@import "mixins";
 @import "setup";
 @import "typography";
+
+
 @import "general-styles";
-
-
 @import "nav";
+@import "form";
+
 @import "index";
+@import "blog";
+@import "contact";

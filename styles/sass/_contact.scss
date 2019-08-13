@@ -1,38 +1,19 @@
-@import "media-queries";
-@import "setup";
-@import "typography";
-@import "nav";
-@import "form";
-@import "general-styles";
-
-
 // header
 
-// header {
-//     background: $bg-color1 url(../assets/contact-image.jpg) center no-repeat;
-//     background-size: cover;
-//     height: 95vh;
-//     min-height: 600px;
+.contact-header {
+    background: $bg-color1 url(../assets/contact-image.jpg) center no-repeat;
+    background-size: cover;
+    height: 95vh;
+    min-height: 600px;
+}
 
-//     @include mq-landscape-mobile {
-//         background-position: left bottom;
-//     }
-// }
-
-// h1 {
-//     width: 100%;
-//     margin: 10% 0 0 0;
-// }
-
-// main
-
-main {
+.contact-main {
     position: relative;
     background: $bg-color2;
     padding-bottom: 4%;
 }
 
-main .wrapper {
+.contact-main .wrapper {
     display: flex;
     justify-content: flex-end;
 
@@ -53,9 +34,10 @@ main .wrapper {
             width: 100%;
         }
     }
-    .contact {
+
+    .contact-links {
         width: calc(30% - 6%);
-        margin: 11% 0 11% 6%;
+        margin: 8% 0 8% 6%;
 
         @include mq-tablet-desk {
             width: calc(30% - 4%);
@@ -75,11 +57,11 @@ main .wrapper {
 
 // form
 
-.form {
+.contact-main .form {
     position: absolute;
     left: -3%;
     top: -33.5%;
-    padding: 6% 0;
+    padding: 6%;
     box-shadow: 20px 20px $highlight-color;  
 
     @include mq-tablet-desk {
@@ -100,13 +82,17 @@ main .wrapper {
     }
 }
 
-button {
+.contact-main form {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.form button {
     margin-top: 7%;
 }
 
-// contact
-
 .social {
+    padding: 5% 0;
     ul {
         display: flex;
         list-style: none;

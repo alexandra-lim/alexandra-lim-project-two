@@ -95,7 +95,7 @@ header {
             position: fixed;
             top: 5%;
             right: 5%;
-            color: #1f2022;
+            color: $base-color;
         }
     }
 
@@ -104,21 +104,4 @@ header {
     }
 }
 
-// header background
-
-
-
-.blog-header {
-    background: $bg-color1 url(../assets/blog-image.jpg) no-repeat;
-}
-
-.contact-header {
-    background: $bg-color1 url(../assets/contact-image.jpg) no-repeat;
-}
-
-header {
-    background-size: cover;
-    height: 95vh;
-    min-height: 600px;
-}
 
