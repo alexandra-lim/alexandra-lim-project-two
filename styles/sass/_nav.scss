@@ -1,4 +1,6 @@
-@import "typography";
+.wrapper {
+    position: relative;
+}
 
 header nav {
     font-family: $body-font;
@@ -6,6 +8,10 @@ header nav {
     font-size: 2rem;
     display: flex;
     justify-content: flex-end;
+    
+    @include mq-mobile-tablet {
+        justify-content: flex-start;
+    }
 }
 
 .logo {
@@ -23,11 +29,67 @@ header ul {
     display: flex;
     justify-content: space-between;
     margin-left: 22.5%;
+
+    @include mq-tablet-desk {
+        width: calc(75% - 10%);
+        margin-left: 10%;
+    }
+
+    @include mq-mobile-tablet {
+        display: inline-block;
+        background: rgba(255,255,255,0.85);
+        width: 80%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: -80%;
+        transition: all 0.5s;
+    }
+
     li {
         padding: 0 6%;
+
+        @include mq-mobile-tablet {
+            margin: 7%;
+            text-align: center;
+        }
+
         &:last-child {
             padding-right: 0;
+
+            @include mq-mobile-tablet {
+                padding-right: 6%;
+            }
         }
+    }
+}
+
+header {
+    input[type="checkbox"]:checked + .header-nav {
+        left: 0;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    label[for="menu-toggle"] {
+        display: none;
+
+        @include mq-mobile-tablet {
+            display: block;
+            position: fixed;
+            top: 5%;
+            right: 5%;
+            color: #1f2022;
+        }
+    }
+
+    .fa-bars {
+        font-size: 5rem;
     }
 }
 
@@ -41,3 +103,4 @@ header nav a {
         border-bottom: 2px solid $highlight-color;
     }
 }
+

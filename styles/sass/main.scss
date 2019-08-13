@@ -2,6 +2,7 @@
 @import "typography";
 @import "nav";
 @import "general-styles";
+@import "media-queries";
 
 // general styles
 .wrapper {
@@ -9,7 +10,6 @@
     width: 80%;
     margin: 0 auto;
     position: relative;
-    border: 1px solid red;
 }
 
 a {
@@ -27,14 +27,17 @@ a {
 
 // header
 header {
-    background: $bg-color1 url(../assets/header-home.jpg) no-repeat;
+    background: $bg-color1 url(../assets/header-home.jpg) right no-repeat;
     background-size: cover;
     height: 95vh;
     min-height: 600px;
+    h1 {
+        margin-left: 0;
+    }
     img {
         position: absolute;
-        top: 51%;
-        right: 44%;
+        top: 40%;
+        right: 48%;
     }
 }
 
@@ -48,7 +51,7 @@ header ul {
 // materials
 
 .materials {
-    margin: 27% 0 10% 0;
+    margin: 20% 0 10% 0;
 }
 
 .materials .wrapper {

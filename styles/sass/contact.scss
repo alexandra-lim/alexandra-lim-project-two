@@ -1,8 +1,10 @@
+@import "media-queries";
 @import "setup";
 @import "typography";
 @import "nav";
 @import "form";
 @import "general-styles";
+
 
 // header
 
@@ -11,6 +13,10 @@ header {
     background-size: cover;
     height: 95vh;
     min-height: 600px;
+
+    @include mq-landscape-mobile {
+        background-position: left bottom;
+    }
 }
 
 h1 {
@@ -29,13 +35,41 @@ main {
 main .wrapper {
     display: flex;
     justify-content: flex-end;
+
+    @include mq-mobile-tablet {
+        display: inline-block;
+        margin: 0 auto;
+    }
+
     .form {
         width: 70%;
         background: $bg-color1;
+
+        @include mq-mobile-tablet {
+            width: 90%;
+        }
+
+        @include mq-landscape-mobile {
+            width: 100%;
+        }
     }
     .contact {
         width: calc(30% - 6%);
         margin: 11% 0 11% 6%;
+
+        @include mq-tablet-desk {
+            width: calc(30% - 4%);
+        }
+
+        @include mq-mobile-tablet {
+            width: 90%;
+            text-align: center;
+            margin: 0 18%;
+        }
+
+         @include mq-landscape-mobile {
+            margin: 20% 18%;
+        }
     }
 }
 
@@ -47,6 +81,20 @@ main .wrapper {
     top: -33.5%;
     padding: 6% 0;
     box-shadow: 20px 20px $highlight-color;  
+
+    @include mq-tablet-desk {
+        box-shadow: 15px 15px $highlight-color;
+        }
+
+    @include mq-mobile-tablet {
+        position: static;
+        margin: 10% 17.5%;
+    }
+
+    @include mq-landscape-mobile {
+        margin: 10%;
+    }
+
     textarea {
         margin-top: 1.5%;
     }
@@ -55,6 +103,7 @@ main .wrapper {
 button {
     margin-top: 7%;
 }
+
 // contact
 
 .social {
@@ -62,11 +111,21 @@ button {
         display: flex;
         list-style: none;
         padding-left: 0;
+
+        @include mq-mobile-tablet {
+            justify-content: center;
+        }
+
         li {
             font-size: 2rem;
             padding: 0 4%;
+
             &:first-child {
                 padding-left: 0;
+
+                @include mq-mobile-tablet {
+                    padding-left: 4%;
+                }
             }
         }
     }
@@ -82,16 +141,44 @@ button {
     line-height: 2.9rem;
     letter-spacing: 2px;
     text-transform: none;
+
+    @include mq-tablet-desk {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    @include mq-landscape-mobile {
+        font-size: 1.4rem;
+    }
 }
 
 .email {
     margin-top: 8%;
     display: block;
+
+    @include mq-tablet-desk {
+        margin-top: 5%;
+    }
 }
 
 .phone-address {
     margin-top: 8%;
+
+    @include mq-tablet-desk {
+        margin-top: 5%;
+    }
+
     p {
         margin: 0;
+
+        @include mq-tablet-desk {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        }
+
+        @include mq-landscape-mobile {
+            font-size: 1.4rem;
+        }
     }
+    
 }
