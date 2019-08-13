@@ -1,6 +1,4 @@
-.wrapper {
-    position: relative;
-}
+// nav
 
 header nav {
     font-family: $body-font;
@@ -35,6 +33,7 @@ header ul {
         margin-left: 10%;
     }
 
+    // hamburger
     @include mq-mobile-tablet {
         display: inline-block;
         background: rgba(255,255,255,0.85);
@@ -67,6 +66,18 @@ header ul {
     }
 }
 
+header nav a {
+    transition: 0.3s ease;
+    padding-bottom: 2%;
+    &:hover {
+        border-bottom: 2px solid $highlight-color;
+    }
+    &:focus {
+        border-bottom: 2px solid $highlight-color;
+    }
+}
+
+// hamburger styles
 header {
     input[type="checkbox"]:checked + .header-nav {
         left: 0;
@@ -93,14 +104,21 @@ header {
     }
 }
 
-header nav a {
-    transition: 0.3s ease;
-    padding-bottom: 2%;
-    &:hover {
-        border-bottom: 2px solid $highlight-color;
-    }
-    &:focus {
-        border-bottom: 2px solid $highlight-color;
-    }
+// header background
+
+
+
+.blog-header {
+    background: $bg-color1 url(../assets/blog-image.jpg) no-repeat;
+}
+
+.contact-header {
+    background: $bg-color1 url(../assets/contact-image.jpg) no-repeat;
+}
+
+header {
+    background-size: cover;
+    height: 95vh;
+    min-height: 600px;
 }
 

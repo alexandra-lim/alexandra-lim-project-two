@@ -1,57 +1,37 @@
-@import "setup";
-@import "typography";
-@import "nav";
-@import "general-styles";
-@import "media-queries";
-
-// general styles
-.wrapper {
-    max-width: 1200px;
-    width: 80%;
-    margin: 0 auto;
-    position: relative;
-}
-
-a {
-    text-transform: uppercase;
-    color: $base-color;
-    text-decoration: none;
-    transition: 0.3s ease;
-    &:hover {
-        border-bottom: 2px solid $highlight-color;
-    }
-    &:focus {
-        border-bottom: 2px solid $highlight-color;
-    }
-}
-
 // header
-header {
-    background: $bg-color1 url(../assets/header-home.jpg) right no-repeat;
-    background-size: cover;
-    height: 95vh;
-    min-height: 600px;
-    h1 {
-        margin-left: 0;
-    }
-    img {
+
+.index-header {
+    background: $bg-color1 url(../assets/header-home.jpg) 75% top no-repeat;
+     img {
         position: absolute;
-        top: 40%;
-        right: 48%;
+        top: 43%;
+        right: 45%;
+    }
+    .index-h1 {
+        width: 25%;
     }
 }
 
-// nav
-header ul {
-    margin-left: 41.75%;
-}
 
 // main
+
+.button-link {
+    text-decoration: none;
+    background: $button-color;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    letter-spacing: 1px;
+    font-family: $headings-font;
+    color: $bg-color1;
+    padding: 2% 4%;
+}
+
 
 // materials
 
 .materials {
-    margin: 20% 0 10% 0;
+    margin: 22% 0 10% 0;
 }
 
 .materials .wrapper {
@@ -61,21 +41,10 @@ header ul {
         width: calc(70% - 10%);
         margin-right: 10%;
         justify-content: space-between;
-        a {
-            text-decoration: none;
-            background: $button-color;
-            text-align: center;
-            font-size: 2rem;
-            line-height: 3.2rem;
-            letter-spacing: 1px;
-            font-family: $headings-font;
-            color: $bg-color1;
-            padding: 2% 4%;
-        }
     }
 }
 
-.materials .materials-image {
+.materials-image {
     flex: 1 0 auto;
     width: 30%;
     justify-content: flex-end;
@@ -85,9 +54,10 @@ header ul {
     }
 }
 
+
 // gallery
 
-.gallery {
+.index-gallery {
     background-color: $bg-color2;
     padding: 7% 0;
     ul {
@@ -105,9 +75,10 @@ header ul {
     }
 }
 
+
 // pages
 
-.pages .wrapper{
+.index-pages .wrapper{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -120,7 +91,7 @@ header ul {
     }
 }
 
-.pages .icon {
+.index-icon {
     .fas {
         font-size: 2.8rem;
         background: #f8fb05;
@@ -132,7 +103,7 @@ header ul {
     }
 }
 
-.pages .text-content {
+.pages-text-content {
     margin: 1% 0 0 4%;
     a {
         font-size: 3.3rem;
@@ -145,31 +116,20 @@ header ul {
 
 // programs + locations
 
-.programs-locations {
+.index-programs-locations {
     background: $bg-color2;
     padding: 7% 0 2% 0;
     position: relative;
-    a {
-        text-decoration: none;
-        background: $button-color;
-        text-align: center;
-        font-size: 2rem;
-        line-height: 3.2rem;
-        letter-spacing: 1px;
-        font-family: $headings-font;
-        color: $bg-color1;
-        padding: 2% 4%;
-    }
 }
 
-.programs, .locations {
+.index-programs, .index-locations {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    .image {
+    .programs-locations-image {
         width: 50%;
     }
-    .text-content {
+    .programs-locations-text-content {
         width: calc(50% - 10%);
         h2 {
             margin: 0;
@@ -177,12 +137,12 @@ header ul {
     }
 }
 
-.programs {
-    .text-content {
+.index-programs {
+    .programs-locations-text-content {
         margin-right: 10%;
         padding-left: 5%;
     }
-    .image {
+    .programs-locations-image {
         margin-top: -11%;
         img {
         box-shadow: 15px 15px $highlight-color;
@@ -190,42 +150,31 @@ header ul {
     }
 }
 
-.locations {
+.index-locations {
     margin-top: 8%;
-    .text-content {
+    .programs-locations-text-content {
         margin-left: 10%;
         margin-top: 3%;
         text-align: right;
         padding-right: 5%;
     }
-    .image {
+    .programs-locations-image {
         padding-left: 3.75%;
         order: 1;
         width: 50%;
+        margin-bottom: -4%;
     }
     img {
         box-shadow: -15px 15px $highlight-color;
     }
 }
-    
+
 // search by style
 
-.style {
-    .text-content {
+.index-style {
+    .index-style-text-content {
         margin: 0 auto;
         text-align: center;
         padding: 10% 0;
-        a {
-            text-decoration: none;
-            background: $button-color;
-            text-align: center;
-            font-size: 2rem;
-            line-height: 3.2rem;
-            letter-spacing: 1px;
-            font-family: $headings-font;
-            color: $bg-color1;
-            padding: 2% 4%;
-        }
     }
 }
-

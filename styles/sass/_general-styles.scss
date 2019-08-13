@@ -12,10 +12,9 @@ html {
 h1 {
     font-size: 6.8rem;
     font-family: $h1-font;
-    width: 25%;
     line-height: 6.4rem;
-    margin-left: 11%;
-
+    margin-top: 5%;
+    
     @include mq-mobile-tablet {
         font-size: 5.4rem;
     }
@@ -56,7 +55,7 @@ a {
     text-transform: uppercase;
     color: $base-color;
     text-decoration: none;
-    transition: 0.3s ease
+    transition: 0.3s ease;
     &:hover {
         border-bottom: 2px solid $highlight-color;
     }

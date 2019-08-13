@@ -8,21 +8,21 @@
 
 // header
 
-header {
-    background: $bg-color1 url(../assets/contact-image.jpg) center no-repeat;
-    background-size: cover;
-    height: 95vh;
-    min-height: 600px;
+// header {
+//     background: $bg-color1 url(../assets/contact-image.jpg) center no-repeat;
+//     background-size: cover;
+//     height: 95vh;
+//     min-height: 600px;
 
-    @include mq-landscape-mobile {
-        background-position: left bottom;
-    }
-}
+//     @include mq-landscape-mobile {
+//         background-position: left bottom;
+//     }
+// }
 
-h1 {
-    width: 100%;
-    margin: 10% 0 0 0;
-}
+// h1 {
+//     width: 100%;
+//     margin: 10% 0 0 0;
+// }
 
 // main
 

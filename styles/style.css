@@ -304,7 +304,7 @@ header nav {
 }
 
 .logo {
-  width: calc(25%);
+  width: 25%;
 }
 
 .logo a h3 {
@@ -409,16 +409,6 @@ header .fa-bars {
   font-size: 5rem;
 }
 
-.index-header {
-  background: #fff url(../assets/header-home.jpg) 75% top no-repeat;
-}
-
-.index-header img {
-  position: absolute;
-  top: 43%;
-  right: 45%;
-}
-
 .blog-header {
   background: #fff url(../assets/blog-image.jpg) no-repeat;
 }
@@ -433,38 +423,34 @@ header {
   min-height: 600px;
 }
 
-.index-h1 {
+.index-header {
+  background: #fff url(../assets/header-home.jpg) 75% top no-repeat;
+}
+
+.index-header img {
+  position: absolute;
+  top: 43%;
+  right: 45%;
+}
+
+.index-header .index-h1 {
   width: 25%;
 }
 
-a {
-  text-transform: uppercase;
-  color: #000;
+.button-link {
   text-decoration: none;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-a:hover {
-  border-bottom: 2px solid #f8fb05;
-}
-
-a:focus {
-  border-bottom: 2px solid #f8fb05;
-}
-
-header img {
-  position: absolute;
-  top: 40%;
-  right: 48%;
-}
-
-header ul {
-  margin-left: 41.75%;
+  background: #065635;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 1px;
+  font-family: "Kumar One", cursive;
+  color: #fff;
+  padding: 2% 4%;
 }
 
 .materials {
-  margin: 20% 0 10% 0;
+  margin: 22% 0 10% 0;
 }
 
 .materials .wrapper {
@@ -483,19 +469,7 @@ header ul {
           justify-content: space-between;
 }
 
-.materials .wrapper .text-content a {
-  text-decoration: none;
-  background: #065635;
-  text-align: center;
-  font-size: 2rem;
-  line-height: 3.2rem;
-  letter-spacing: 1px;
-  font-family: "Kumar One", cursive;
-  color: #fff;
-  padding: 2% 4%;
-}
-
-.materials .materials-image {
+.materials-image {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
@@ -506,17 +480,17 @@ header ul {
   padding-left: 3.75%;
 }
 
-.materials .materials-image img {
+.materials-image img {
   -webkit-box-shadow: -15px 15px #f8fb05;
           box-shadow: -15px 15px #f8fb05;
 }
 
-.gallery {
+.index-gallery {
   background-color: #e0fddf;
   padding: 7% 0;
 }
 
-.gallery ul {
+.index-gallery ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -527,16 +501,16 @@ header ul {
   padding-left: 0;
 }
 
-.gallery ul li {
+.index-gallery ul li {
   width: calc(100% / 3);
   margin-right: 3%;
 }
 
-.gallery ul li:last-child {
+.index-gallery ul li:last-child {
   margin: 0;
 }
 
-.pages .wrapper {
+.index-pages .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -548,7 +522,7 @@ header ul {
   padding: 5% 0 10% 0;
 }
 
-.pages .wrapper .pages-content {
+.index-pages .wrapper .pages-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -558,7 +532,7 @@ header ul {
   margin: 3% 1% 0 1%;
 }
 
-.pages .icon .fas {
+.index-icon .fas {
   font-size: 2.8rem;
   background: #f8fb05;
   padding: 14px;
@@ -568,36 +542,24 @@ header ul {
   text-align: center;
 }
 
-.pages .text-content {
+.pages-text-content {
   margin: 1% 0 0 4%;
 }
 
-.pages .text-content a {
+.pages-text-content a {
   font-size: 3.3rem;
   line-height: 5.8rem;
   letter-spacing: 2.1px;
   font-family: "Kumar One", cursive;
 }
 
-.programs-locations {
+.index-programs-locations {
   background: #e0fddf;
   padding: 7% 0 2% 0;
   position: relative;
 }
 
-.programs-locations a {
-  text-decoration: none;
-  background: #065635;
-  text-align: center;
-  font-size: 2rem;
-  line-height: 3.2rem;
-  letter-spacing: 1px;
-  font-family: "Kumar One", cursive;
-  color: #fff;
-  padding: 2% 4%;
-}
-
-.programs, .locations {
+.index-programs, .index-locations {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -608,70 +570,59 @@ header ul {
           justify-content: space-between;
 }
 
-.programs .image, .locations .image {
+.index-programs .programs-locations-image, .index-locations .programs-locations-image {
   width: 50%;
 }
 
-.programs .text-content, .locations .text-content {
+.index-programs .programs-locations-text-content, .index-locations .programs-locations-text-content {
   width: calc(50% - 10%);
 }
 
-.programs .text-content h2, .locations .text-content h2 {
+.index-programs .programs-locations-text-content h2, .index-locations .programs-locations-text-content h2 {
   margin: 0;
 }
 
-.programs .text-content {
+.index-programs .programs-locations-text-content {
   margin-right: 10%;
   padding-left: 5%;
 }
 
-.programs .image {
+.index-programs .programs-locations-image {
   margin-top: -11%;
 }
 
-.programs .image img {
+.index-programs .programs-locations-image img {
   -webkit-box-shadow: 15px 15px #f8fb05;
           box-shadow: 15px 15px #f8fb05;
 }
 
-.locations {
+.index-locations {
   margin-top: 8%;
 }
 
-.locations .text-content {
+.index-locations .programs-locations-text-content {
   margin-left: 10%;
   margin-top: 3%;
   text-align: right;
   padding-right: 5%;
 }
 
-.locations .image {
+.index-locations .programs-locations-image {
   padding-left: 3.75%;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
   width: 50%;
+  margin-bottom: -4%;
 }
 
-.locations img {
+.index-locations img {
   -webkit-box-shadow: -15px 15px #f8fb05;
           box-shadow: -15px 15px #f8fb05;
 }
 
-.style .text-content {
+.index-style .index-style-text-content {
   margin: 0 auto;
   text-align: center;
   padding: 10% 0;
-}
-
-.style .text-content a {
-  text-decoration: none;
-  background: #065635;
-  text-align: center;
-  font-size: 2rem;
-  line-height: 3.2rem;
-  letter-spacing: 1px;
-  font-family: "Kumar One", cursive;
-  color: #fff;
-  padding: 2% 4%;
 }
