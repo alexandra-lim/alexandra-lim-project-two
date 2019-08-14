@@ -1,15 +1,35 @@
 // header
 
 .index-header {
-    background: $bg-color1 url(../assets/header-home.jpg) 75% top no-repeat;
+    background: $bg-color1 url(../assets/header-home.jpg) right no-repeat;
+    background-size: cover;
+    height: 95vh;
+    min-height: 600px;
 
      img {
         position: absolute;
-        top: 43%;
-        right: 45%;
+        top: 40%;
+        right: 42%;
+
+        @include mq-tablet-desk {
+            display: none;
+        }
     }
     .index-h1 {
         width: 25%;
+        margin-left: 8%;
+
+        @include mq-tablet-desk {
+            margin-left: 0;
+        }
+
+        @include mq-landscape-mobile {
+            margin-top: 30%;
+        }
+
+        @include mq-320 {
+            margin-top: 50%;
+        }
     }
 }
 
@@ -26,30 +46,54 @@
     font-family: $headings-font;
     color: $bg-color1;
     padding: 2% 4%;
+
+    @include mq-tablet-desk {
+        font-size: 1.6rem;
+    }
 }
 
 
 // materials
 
 .materials {
-    margin: 22% 0 10% 0;
+    margin: 20% 0 10% 0;
+
+    @include mq-tablet-desk {
+        margin-top: 10%;
+    }
 }
 
 .materials .wrapper {
     display: flex;
     flex-wrap: wrap;
+
+    @include mq-mobile-tablet {
+        display: block;
+    }
+
     .text-content {
-        width: calc(70% - 10%);
-        margin-right: 10%;
+        width: calc(70% - 5%);
+        margin-right: 5%;
         justify-content: space-between;
+
+        @include mq-mobile-tablet {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
     }
 }
 
 .materials-image {
     flex: 1 0 auto;
     width: 30%;
-    justify-content: flex-end;
+    margin-top: 1%;
     padding-left: 3.75%;
+    
+    @include mq-mobile-tablet {
+        display: none;
+    }
+
     img {
         box-shadow: -15px 15px $highlight-color;
     }
@@ -66,11 +110,30 @@
         list-style: none;
         justify-content: space-between;
         padding-left: 0;
+
+        @include mq-mobile-tablet {
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
         li {
             width: calc(100% / 3);
             margin-right: 3%;
+
+            @include mq-mobile-tablet {
+                width: 100%;
+                margin: 0 0 5% 0;
+                text-align: center;
+            }
+    
             &:last-child {
                 margin: 0;
+
+                @include mq-mobile-tablet {
+                    padding-bottom: 0;
+                    margin-right: 0;
+                    margin: 0;
+                }
             }
         }
     }
@@ -79,16 +142,32 @@
 
 // pages
 
-.index-pages .wrapper{
+.index-pages .wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 5% 0 10% 0;
+
+    @include mq-mobile-tablet {
+        display: block;
+    }
+
     .pages-content {
         display: flex;
         width: calc(50% - 2%);
         align-content: space-between;
         margin: 3% 1% 0 1%;
+
+        @include mq-mobile-tablet {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        @include mq-landscape-mobile {
+            display: inline-block;
+            text-align: center;
+            margin-bottom: 8%;
+        }
     }
 }
 
@@ -101,6 +180,10 @@
         height: 60px;
         border-radius: 50%;
         text-align: center;
+        
+        @include mq-landscape-mobile {
+            margin-bottom: 3%;
+        }
     }
 }
 
@@ -111,6 +194,17 @@
         line-height: 5.8rem;
         letter-spacing: 2.1px;
         font-family: $headings-font;
+
+        @include mq-tablet-desk {
+            font-size: 2.8rem;
+            line-height: 4rem;
+        }
+
+        @include mq-landscape-mobile {
+            font-size: 2.4rem;
+            line-height: 3.5rem;
+            text-align: center;
+        }
     }
 }
 
@@ -127,11 +221,24 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @include mq-mobile-tablet {
+        flex-direction: column;
+    }
+
     .programs-locations-image {
         width: 50%;
+
+        @include mq-mobile-tablet {
+            width: 90%;
+        }
     }
     .programs-locations-text-content {
         width: calc(50% - 10%);
+
+        @include mq-mobile-tablet {
+            width: 90%;
+        }
         h2 {
             margin: 0;
         }
@@ -142,31 +249,82 @@
     .programs-locations-text-content {
         margin-right: 10%;
         padding-left: 5%;
+
+        @include mq-mobile-tablet {
+            width: calc(100% - 6%);
+            margin: 0 3% 10% 3%;
+            padding: 0;
+            text-align: center;
+        }
     }
     .programs-locations-image {
         margin-top: -11%;
+
+        @include mq-tablet-desk {
+            margin-top: 0;
+        }
+
+        @include mq-mobile-tablet {
+            width: calc(100% - 6%);
+            margin: 0 3% 5% 3%;
+            padding: 0;
+            text-align: center;
+        }
+
         img {
         box-shadow: 15px 15px $highlight-color;
+
+            @include mq-mobile-tablet {
+                box-shadow: -7px 7px $highlight-color;
+            }
         }
     }
 }
 
 .index-locations {
     margin-top: 8%;
+
+    @include mq-tablet-desk {
+        margin-bottom: 8%;
+    }
+
+    @include mq-mobile-tablet {
+        margin: 0 auto;
+    }
+
     .programs-locations-text-content {
         margin-left: 10%;
         margin-top: 3%;
         text-align: right;
         padding-right: 5%;
+
+        @include mq-mobile-tablet {
+            width: calc(100% - 6%);
+            margin: 0 3% 5% 3%;
+            padding: 0;
+            text-align: center;
+        }
     }
     .programs-locations-image {
         padding-left: 3.75%;
         order: 1;
         width: 50%;
         margin-bottom: -4%;
+
+        @include mq-mobile-tablet {
+            width: calc(100% - 6%);
+            order: 0;
+            margin: 0 3% 5% 3%;
+            padding: 0;
+            text-align: center;
+        }
     }
     img {
         box-shadow: -15px 15px $highlight-color;
+
+        @include mq-mobile-tablet {
+            box-shadow: -7px 7px $highlight-color;
+        }
     }
 }
 
