@@ -6,7 +6,7 @@
     height: 95vh;
     min-height: 600px;
 
-     img {
+    img {
         position: absolute;
         top: 40%;
         right: 42%;
@@ -274,8 +274,9 @@
         img {
         box-shadow: 15px 15px $highlight-color;
 
-            @include mq-mobile-tablet {
-                box-shadow: -7px 7px $highlight-color;
+            @include mq-landscape-mobile {
+                box-shadow: none;
+
             }
         }
     }
@@ -323,8 +324,14 @@
         box-shadow: -15px 15px $highlight-color;
 
         @include mq-mobile-tablet {
-            box-shadow: -7px 7px $highlight-color;
+            box-shadow: none;
         }
+    }
+}
+
+.index-full-bleed {
+    @include mq-landscape-mobile {
+        display: none;
     }
 }
 

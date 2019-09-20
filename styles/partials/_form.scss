@@ -81,7 +81,7 @@ button {
         line-height: 1.8rem;
     }
 
-    &:hover {
+    &:hover, &:focus {
         background: $bg-color1;
         color: $button-color;
     }

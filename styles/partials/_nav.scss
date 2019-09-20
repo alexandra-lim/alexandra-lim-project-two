@@ -101,6 +101,10 @@ header {
 
     .fa-bars {
         font-size: 5rem;
+
+        @include mq-landscape-mobile {
+            font-size: 4rem;
+        }
     }
 }
 
